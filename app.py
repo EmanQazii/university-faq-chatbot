@@ -294,23 +294,53 @@ css = textwrap.dedent(f"""
     white-space: pre-wrap;
     overflow-wrap: anywhere;
 }}
+/* Bottom chat-input area */
+[data-testid="stBottom"] {{
+    background: {BG} !important;
+    background-color: {BG} !important;
+    border-top: none !important;
+}}
+
+[data-testid="stBottom"] > div {{
+    background: {BG} !important;
+    background-color: {BG} !important;
+}}
+
+[data-testid="stBottom"] [data-testid="stChatInput"] {{
+    background: {INPUT_BG} !important;
+}}
+
+/* Streamlit bottom container */
+.stBottom {{
+    background: {BG} !important;
+}}
+
+.stBottom > div {{
+    background: {BG} !important;
+}}
 
 /* chat input */
 [data-testid="stChatInput"] {{
     background: {INPUT_BG} !important;
-    border: 1.5px solid {BORDER} !important;
+    border: 1.5px solid {BLUE} !important;
     border-radius: 14px !important;
     box-shadow: 0 2px 12px {SHADOW} !important;
     padding: 4px 6px !important;
-    transition: border-color 0.2s, box-shadow 0.2s !important;
 }}
-[data-testid="stChatInput"]:focus-within {{
-    border-color: {BLUE} !important;
-    box-shadow: 0 2px 12px {SHADOW}, 0 0 0 3px rgba(37,99,235,0.1) !important;
-}}
-[data-testid="stChatInput"] textarea {{
+
+[data-testid="stChatInput"] > div,
+[data-testid="stChatInput"] > div > div,
+[data-testid="stChatInput"] form,
+[data-testid="stChatInput"] form > div,
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInput"] textarea + div {{
     background: {INPUT_BG} !important;
+}}
+
+/* Text area */
+[data-testid="stChatInput"] textarea {{
     color: {INPUT_TEXT} !important;
+    -webkit-text-fill-color: {INPUT_TEXT} !important;
     caret-color: {BLUE} !important;
     border: none !important;
     outline: none !important;
@@ -320,11 +350,24 @@ css = textwrap.dedent(f"""
     padding: 10px 10px !important;
     resize: none !important;
 }}
+
+/* Placeholder */
 [data-testid="stChatInput"] textarea::placeholder {{
     color: {INPUT_PH} !important;
+    -webkit-text-fill-color: {INPUT_PH} !important;
     opacity: 1 !important;
     font-size: 13px !important;
 }}
+
+/* Focus */
+[data-testid="stChatInput"]:focus-within {{
+    border-color: {BLUE} !important;
+    box-shadow:
+        0 2px 12px {SHADOW},
+        0 0 0 3px rgba(59,130,246,0.12) !important;
+}}
+
+/* Send button */
 [data-testid="stChatInput"] button {{
     background: {BLUE} !important;
     border: none !important;
@@ -332,11 +375,16 @@ css = textwrap.dedent(f"""
     width: 36px !important;
     height: 36px !important;
     flex-shrink: 0 !important;
-    transition: background 0.15s !important;
 }}
-[data-testid="stChatInput"] button:hover {{ background: {BLUE_DARK} !important; }}
-[data-testid="stChatInput"] button svg {{ fill: #ffffff !important; }}
 
+[data-testid="stChatInput"] button:hover {{
+    background: {BLUE_DARK} !important;
+}}
+
+[data-testid="stChatInput"] button svg {{
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}}
 /* toggle */
 [data-testid="stToggle"] label {{
     color: {TEXT} !important;
