@@ -1,21 +1,21 @@
-query,expected_id,predicted_id,similarity,matched_question,correct
-What are the admission requirements for undergraduate programs?,1.0,1.0,1.0,What are the admission requirements for undergraduate programs?,True
-What undergraduate programs are offered at the university?,6.0,6.0,1.0,What undergraduate programs are offered at the university?,True
-How do I apply for admission?,11.0,11.0,1.0,How do I apply for admission?,True
-What is the tuition fee structure?,16.0,16.0,1.0,What is the tuition fee structure?,True
-What scholarships are available for students?,21.0,21.0,1.0,What scholarships are available for students?,True
-What do I need to get admitted?,1.0,1.0,0.646,What are the admission requirements for undergraduate programs?,True
-Which degrees can I study here?,6.0,6.0,0.4626,What undergraduate programs are offered at the university?,True
-How can I submit my application?,11.0,11.0,0.6673,How do I apply for admission?,True
-How much are the fees?,16.0,17.0,0.643,What is the application processing fee?,False
-Is financial aid available?,21.0,21.0,0.5934,What scholarships are available for students?,True
-When is the last date to apply for fall?,12.0,12.0,0.6666,What is the application deadline for the fall semester?,True
-Who can join the SafeX internship?,32.0,32.0,0.8923,Who is eligible to apply for the SafeX internship?,True
-How long does the SafeX internship last?,33.0,33.0,0.9636,How long is the SafeX internship?,True
-Will I get a certificate from SafeX?,37.0,37.0,0.8083,Will I receive a certificate after completing the SafeX internship?,True
-What is my minimum GPA to keep my scholarship?,25.0,23.0,0.7293,What is the minimum CGPA required to apply for a merit scholarship?,False
-What is the weather like today?,,,0.0486,,True
-Tell me a joke,,,0.1156,,True
-What is the capital of France?,,,0.2487,,True
-Who won the cricket match yesterday?,,,0.1195,,True
-What should I eat for lunch?,,,0.1024,,True
+category,query,expected_id,predicted_id,similarity,matched_question,correct
+EXACT,What are the admission requirements for undergraduate programs?,1.0,1.0,1.0,What are the admission requirements for undergraduate programs?,True
+EXACT,What undergraduate programs are offered at the university?,6.0,6.0,1.0,What undergraduate programs are offered at the university?,True
+EXACT,How do I apply for admission?,11.0,11.0,1.0,How do I apply for admission?,True
+EXACT,What is the tuition fee structure?,16.0,16.0,0.8193,How much is the university tuition fee?,True
+EXACT,What scholarships are available for students?,21.0,21.0,1.0,What scholarships are available for students?,True
+PARAPHRASED,What do I need to get admitted?,1.0,1.0,0.646,What are the admission requirements for undergraduate programs?,True
+PARAPHRASED,Which degrees can I study here?,6.0,6.0,0.4626,What undergraduate programs are offered at the university?,True
+PARAPHRASED,How can I submit my application?,11.0,11.0,0.6673,How do I apply for admission?,True
+PARAPHRASED,How much are the fees?,16.0,17.0,0.643,What is the application processing fee?,False
+PARAPHRASED,Is financial aid available?,21.0,21.0,0.5934,What scholarships are available for students?,True
+PARAPHRASED,When is the last date to apply for fall?,12.0,12.0,0.6666,What is the application deadline for the fall semester?,True
+PARAPHRASED,Who can join the SafeX internship?,32.0,32.0,0.8923,Who is eligible to apply for the SafeX internship?,True
+PARAPHRASED,How long does the SafeX internship last?,33.0,33.0,0.9636,How long is the SafeX internship?,True
+PARAPHRASED,Will I get a certificate from SafeX?,37.0,37.0,0.8083,Will I receive a certificate after completing the SafeX internship?,True
+PARAPHRASED,What is my minimum GPA to keep my scholarship?,25.0,25.0,0.775,What minimum CGPA must I maintain to keep my scholarship after it is awarded?,True
+FALLBACK,What is the weather like today?,,,0.0781,,True
+FALLBACK,Tell me a joke,,,0.1156,,True
+FALLBACK,What is the capital of France?,,,0.2487,,True
+FALLBACK,Who won the cricket match yesterday?,,,0.1195,,True
+FALLBACK,What should I eat for lunch?,,,0.1024,,True
