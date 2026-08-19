@@ -1,4 +1,4 @@
-# 🎓 SafeX University FAQ Chatbot
+#  SafeX University FAQ Chatbot
 
 A retrieval-based AI chatbot prototype that answers common university
 and SafeX internship questions using a structured FAQ knowledge base.
@@ -9,14 +9,14 @@ includes a professional Streamlit interface, FAQ shortcuts, session chat
 history, clear/new chat functionality, light/dark themes, fallback
 handling, evaluation logging, and public deployment.
 
-## 🚀 Live Demo
+##  Live Demo
 
 **Streamlit App:**\
 https://university-faq-safex.streamlit.app/
 
 ------------------------------------------------------------------------
 
-## 📌 Project Objective
+##  Project Objective
 
 Universities and internship programs receive repetitive questions about
 admissions, programs, deadlines, fees, scholarships, campus facilities,
@@ -27,7 +27,7 @@ base without using a generative language model.
 
 ------------------------------------------------------------------------
 
-## ✨ Features
+##  Features
 
 -   Semantic FAQ retrieval using
     `sentence-transformers/all-MiniLM-L6-v2`
@@ -48,7 +48,7 @@ base without using a generative language model.
 
 ------------------------------------------------------------------------
 
-## 🧠 How It Works
+##  How It Works
 
 ``` text
 User Question
@@ -84,7 +84,7 @@ Return FAQ       Return Fallback
 
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+##  Project Structure
 
 ``` text
 university-faq-chatbot/
@@ -124,7 +124,7 @@ university-faq-chatbot/
 
 ------------------------------------------------------------------------
 
-## 📊 Dataset
+##  Dataset
 
 The knowledge base contains **40 FAQ question-answer pairs** in CSV
 format.
@@ -151,7 +151,7 @@ The dataset can be expanded without changing the retrieval architecture.
 
 ------------------------------------------------------------------------
 
-## 🧪 Evaluation
+##  Evaluation
 
 The evaluation script contains **20 test questions** covering three
 types of cases:
@@ -193,7 +193,7 @@ These are expected to trigger the fallback response.
 
 ------------------------------------------------------------------------
 
-## 📈 Evaluation Result
+##  Evaluation Result
 
 Latest evaluation:
 
@@ -225,7 +225,7 @@ outputs/accuracy_test_log.csv
 
 ------------------------------------------------------------------------
 
-## ▶️ Run Locally
+##  Run Locally
 
 ### 1. Clone the repository
 
@@ -262,7 +262,7 @@ streamlit run app.py
 
 ------------------------------------------------------------------------
 
-## 🧪 Run Evaluation
+## Run Evaluation
 
 From the project root:
 
@@ -282,7 +282,7 @@ The evaluation script:
 
 ------------------------------------------------------------------------
 
-## 💻 Run Terminal Testing
+## Run Terminal Testing
 
 ``` powershell
 python test_chatbot.py
@@ -302,7 +302,7 @@ knowledge base.
 
 ------------------------------------------------------------------------
 
-## 🛠️ Technologies
+## Technologies
 
 -   **Python**
 -   **Pandas** --- dataset handling and evaluation logs
@@ -315,7 +315,7 @@ knowledge base.
 
 ------------------------------------------------------------------------
 
-## 📦 Requirements
+## Requirements
 
 The direct Python dependencies are:
 
@@ -336,7 +336,7 @@ entrypoint.
 
 ------------------------------------------------------------------------
 
-## ☁️ Deployment
+## Deployment
 
 The application is deployed with **Streamlit Community Cloud**.
 
@@ -364,7 +364,7 @@ be installed again.
 
 ------------------------------------------------------------------------
 
-## 🔐 `.gitignore`
+## `.gitignore`
 
 The local virtual environment and Python cache files should not be
 committed.
@@ -385,7 +385,7 @@ deliverables.
 
 ------------------------------------------------------------------------
 
-## ⚠️ Limitations
+## Limitations
 
 This is a **retrieval-based prototype**, not a generative chatbot.
 
@@ -404,7 +404,7 @@ Therefore:
 
 ------------------------------------------------------------------------
 
-## 🔮 Future Improvements
+## Future Improvements
 
 Possible extensions include:
 
@@ -423,38 +423,37 @@ Possible extensions include:
 
 ------------------------------------------------------------------------
 
-## 🎯 Task Requirements Checklist
+## Task Requirements Checklist
 
   -----------------------------------------------------------------------
   Requirement                         Status
   ----------------------------------- -----------------------------------
-  25+ FAQ pairs                       ✅ 40 FAQ pairs
+  25+ FAQ pairs                       40 FAQ pairs
 
-  Structured CSV/JSON dataset         ✅ CSV
+  Structured CSV/JSON dataset         CSV
 
-  Working retrieval logic             ✅ Sentence Transformers + cosine
+  Working retrieval logic             Sentence Transformers + cosine
                                       similarity
 
-  Simple chat interface               ✅ Streamlit
+  Simple chat interface               Streamlit
 
-  15+ sample questions                ✅ 20 test questions
+  15+ sample questions                20 test questions
 
-  Paraphrased questions               ✅ Included
+  Paraphrased questions               Included
 
-  Accuracy test log                   ✅ CSV generated
+  Accuracy test log                   CSV generated
 
-  70%+ success criterion              ✅ 95%
+  70%+ success criterion              95%
 
-  Fallback handling                   ✅ Implemented
+  Fallback handling                   Implemented
 
-  Public deployment                   ✅ Streamlit Community Cloud
+  Public deployment                   Streamlit Community Cloud
 
-  README documentation                ✅
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
-## 🎯 Project Summary
+## Project Summary
 
 The project demonstrates an end-to-end retrieval-based FAQ chatbot:
 
