@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+textColor = "#111827"
+backgroundColor = "#F4F6FA"
+
+[server]
+fileWatcherType = "none"
